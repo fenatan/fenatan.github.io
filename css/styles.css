@@ -8,14 +8,13 @@ body {
     -webkit-font-smoothing: antialiased !important;
     display: flex;
     flex-direction: column;
-    background-color: #2d3949;
+    background-color: #2D3949;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #b5e3d8;
-    color: #E2D4B7;
+    color: white;
 }
 
 #main-header {
@@ -64,7 +63,70 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    height: 200px;
+    /* height: 200px; */
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    margin-top: 20px;
+    width: 600px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #00a1a7 90%, #eee 10%);
+    border-radius: 5px;
+}
+
+#node{
+    background: linear-gradient(90deg, #00a1a7 80%, #eee 20%);
+}
+
+#mongo{
+    background: linear-gradient(90deg, #00a1a7 75%, #eee 15%);
+}
+#mysql{
+    background: linear-gradient(90deg, #00a1a7 60%, #eee 40%);
+}
+#docker{
+    background: linear-gradient(90deg, #00a1a7 50%, #eee 50%);
+}
+#html{
+    background: linear-gradient(90deg, #00a1a7 70%, #eee 30%);
+}
+#css{
+    background: linear-gradient(90deg, #00a1a7 60%, #eee 30%);
+}
+#react{
+    background: linear-gradient(90deg, #00a1a7 50%, #eee 30%);
+}
+#cpp{
+    background: linear-gradient(90deg, #00a1a7 80%, #eee 30%);
+}
+
+.skill span{
+    font-size: 1.5rem;
+    color: #2D3949;
+    margin-right: 10px;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #04c2c9;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 #projects {
