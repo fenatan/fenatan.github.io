@@ -37,7 +37,7 @@ section h1 {
 }
 
 #main-header h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'PT Mono';
     color: #fff;
     margin-top: 20vh;
@@ -46,8 +46,19 @@ section h1 {
 
 #main-header h3 {
     font-family: 'PT Mono';
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.5rem;
+    color: #F0B67F;
+    /* text-decoration: wavy; */
+    border-top: 2px solid #F0B67F;
+    border-bottom: 2px solid #F0B67F;
+    border: 2px solid #F0B67F;
+    padding: 15px;
+}
+
+#main-header h3:hover{
+    background-color: #F0B67F;
+    color: #2D3949;
+    text-decoration: underline;
 }
 
 .profile {
@@ -59,14 +70,14 @@ section h1 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 3px solid #F0B67F;
 }
 
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 #about p {
@@ -195,7 +206,6 @@ section h1 {
 
 #projects nav ul li:hover {
     cursor: pointer;
-    opacity: .6;
     background-color: #F0B67F;
 }
 
@@ -213,7 +223,7 @@ section h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 5px;
+    margin: 5px 5px 35px 5px;
     width: 300px;
     height: 300px;
     background-color: #2D3949;
@@ -260,29 +270,97 @@ section h1 {
     color: #2D3949;
 }
 
-.project .description{
+.project .description {
     display: none;
 }
 
-.project .button{
+.project .button {
     display: none;
 }
 
-.project:hover{
+.project:hover {
     background-color: #00a1a7;
 }
 
-.project:hover .description{
+.project:hover .description {
     display: flex;
 }
 
-.project:hover .button{
+.project:hover .button {
     display: flex;
 }
+
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    height: 200px;
+    /* height: 1000px; */
 }
+
+#contact p{
+    font-size: 2rem;
+    color:white;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    min-width: 500px;
+}
+
+#contact form > *{
+   margin-bottom: 10px;
+   padding: 10px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #2D3949;
+   border-radius: 3px;
+   border: 1px solid #2D3949;
+   outline: 0;
+}
+
+#contact form input{
+    width: 100%;
+    height: 30px;
+}
+
+#contact form textarea{
+    min-width: 100%;
+    min-height: 150px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#contact form button{
+    background-color: #F0B67F;
+    width: 100px;
+    align-self: start;
+}
+
+#contact form button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #B5E3D8;
+    margin-top: 50px;
+}
+
+footer p, footer p a{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #2D3949;
+    font-weight: bold;
+}
+
+
